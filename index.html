@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Login Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Main centered container for the portal -->
+  <main class="portal-container">
+    <div class="login-card">
+
+      <!-- Header and branding -->
+      <header class="card-header">
+        <!-- Pure CSS cloud symbol -->
+        <div class="cloud-icon" aria-hidden="true">
+          <div class="cloud-shape"></div>
+        </div>
+        <h1 class="portal-title">Cloud Login Portal</h1>
+        <p class="portal-subtitle">Cloud Computing Assignment</p>
+        <p class="portal-note">Simple web application hosted on the cloud</p>
+      </header>
+
+      <!-- Demonstration login form -->
+      <form id="login-form" novalidate>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" autocomplete="off">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="off">
+        </div>
+
+        <button type="submit" id="login-btn" class="login-button">Login</button>
+      </form>
+
+      <!-- Status and feedback message area -->
+      <div id="message-box" class="message-box" role="status" aria-live="polite"></div>
+
+    </div>
+  </main>
+
+  <!-- External JavaScript logic -->
+  <script src="script.js"></script>
+</body>
+
+</html>
